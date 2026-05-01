@@ -17,12 +17,12 @@ const GameScreen = ({ myPokeSelection, pcPokeSelection, handleReset }) => {
 
       if (newEnemyHp <= 0) {
         setWinner(myPokeSelection.name);
-        setMessage(`${myPokeSelection.name} ganó la batalla`);
+        setMessage(`${myPokeSelection.name} gano la batalla`);
         return;
       }
 
       setMessage(
-        `${myPokeSelection.name} atacó e hizo ${damage} de daño`
+        `${myPokeSelection.name} ataco e hizo ${damage} de daño`
       );
       setTurn("enemy");
 
@@ -39,17 +39,17 @@ const GameScreen = ({ myPokeSelection, pcPokeSelection, handleReset }) => {
 
     if (newPlayerHp <= 0) {
       setWinner(pcPokeSelection.name);
-      setMessage(`${pcPokeSelection.name} ganó la batalla`);
+      setMessage(`${pcPokeSelection.name} gano la batalla`);
       return;
     }
 
-    setMessage(`${pcPokeSelection.name} atacó e hizo ${damage} de daño`);
+    setMessage(`${pcPokeSelection.name} ataco e hizo ${damage} de daño`);
     setTurn("player");
   };
 
   return (
     <div className="w-[450px] min-h-[300px] border-4 border-solid rounded-2xl flex flex-col items-center justify-center gap-4 p-4 bg-black text-white">
-      <h2 className="text-xl font-bold">Batalla Pokémon</h2>
+      <h2 className="text-xl font-bold">Batalla Pokemoooooooon</h2>
 
       <div className="w-full flex justify-around items-center">
         <div className="flex flex-col items-center gap-2">
